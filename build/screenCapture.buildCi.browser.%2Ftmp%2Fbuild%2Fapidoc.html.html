@@ -119,15 +119,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.jws.tostring">
-            function <span class="apidocSignatureSpan">jws.</span>tostring
-            <span class="apidocSignatureSpan">(obj)</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.jws.verify">
             function <span class="apidocSignatureSpan">jws.</span>verify
             <span class="apidocSignatureSpan">(jwsSig, algorithm, secretOrKey)</span>
@@ -165,32 +156,6 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">jws.</span>verify_stream.prototype</span>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.jws.createSign">module jws.createSign</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.jws.createSign.createSign">
-            function <span class="apidocSignatureSpan">jws.</span>createSign
-            <span class="apidocSignatureSpan">(opts)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.jws.createVerify">module jws.createVerify</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.jws.createVerify.createVerify">
-            function <span class="apidocSignatureSpan">jws.</span>createVerify
-            <span class="apidocSignatureSpan">(opts)</span>
-            </a>
 
         </li>
 
@@ -240,45 +205,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.jws.decode">module jws.decode</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.jws.decode.decode">
-            function <span class="apidocSignatureSpan">jws.</span>decode
-            <span class="apidocSignatureSpan">(jwsSig, opts)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.jws.isValid">module jws.isValid</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.jws.isValid.isValid">
-            function <span class="apidocSignatureSpan">jws.</span>isValid
-            <span class="apidocSignatureSpan">(string)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.jws.sign">module jws.sign</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.jws.sign.sign">
-            function <span class="apidocSignatureSpan">jws.</span>sign
-            <span class="apidocSignatureSpan">(opts)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
     <li class="apidocModuleLi"><a href="#apidoc.module.jws.sign_stream">module jws.sign_stream</a><ol>
 
         <li>
@@ -317,32 +243,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.jws.sign_stream.prototype.sign">
             function <span class="apidocSignatureSpan">jws.sign_stream.prototype.</span>sign
             <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.jws.tostring">module jws.tostring</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.jws.tostring.tostring">
-            function <span class="apidocSignatureSpan">jws.</span>tostring
-            <span class="apidocSignatureSpan">(obj)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.jws.verify">module jws.verify</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.jws.verify.verify">
-            function <span class="apidocSignatureSpan">jws.</span>verify
-            <span class="apidocSignatureSpan">(jwsSig, algorithm, secretOrKey)</span>
             </a>
 
         </li>
@@ -658,25 +558,6 @@ Options:
 
 
     <h2>
-        <a href="#apidoc.element.jws.tostring" id="apidoc.element.jws.tostring">
-        function <span class="apidocSignatureSpan">jws.</span>tostring
-        <span class="apidocSignatureSpan">(obj)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString(obj) {
-  if (typeof obj === 'string')
-    return obj;
-  if (typeof obj === 'number' || Buffer.isBuffer(obj))
-    return obj.toString();
-  return JSON.stringify(obj);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
         <a href="#apidoc.element.jws.verify" id="apidoc.element.jws.verify">
         function <span class="apidocSignatureSpan">jws.</span>verify
         <span class="apidocSignatureSpan">(jwsSig, algorithm, secretOrKey)</span>
@@ -752,78 +633,6 @@ buffer containing either the secret for HMAC algorithms, or the PEM
 
 
 
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.jws.createSign" id="apidoc.module.jws.createSign">module jws.createSign</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.jws.createSign.createSign" id="apidoc.element.jws.createSign.createSign">
-        function <span class="apidocSignatureSpan">jws.</span>createSign
-        <span class="apidocSignatureSpan">(opts)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function createSign(opts) {
-  return new SignStream(opts);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-```js
-{ header: { alg: 'HS256' },
-  payload: 'h. jon benjamin',
-  signature: 'YOWPewyGHKu4Y_0M_vtlEnNlqmFOclqp4Hy6hVHfFT4'
-}
-```
-
-## jws.<span class="apidocCodeKeywordSpan">createSign</span>(options)
-Returns a new SignStream object.
-
-Options:
-
-* `header` (required)
-* `payload`
-* `key` || `privateKey` || `secret`
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.jws.createVerify" id="apidoc.module.jws.createVerify">module jws.createVerify</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.jws.createVerify.createVerify" id="apidoc.element.jws.createVerify.createVerify">
-        function <span class="apidocSignatureSpan">jws.</span>createVerify
-        <span class="apidocSignatureSpan">(opts)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function createVerify(opts) {
-  return new VerifyStream(opts);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-privateKeyStream.pipe(signer.privateKey);
-payloadStream.pipe(signer.payload);
-signer.on('done', function(signature) {
-  // ...
-});
-```
-
-## jws.<span class="apidocCodeKeywordSpan">createVerify</span>(options)
-Returns a new VerifyStream object.
-
-Options:
-
-* `signature`
-* `algorithm`
-* `key` || `publicKey` || `secret`
-...</pre></li>
-    </ul>
 
 
 </div>
@@ -944,124 +753,6 @@ DataStream.prototype.end = function end(data) {
 };
 
 module.exports = DataStream;
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.jws.decode" id="apidoc.module.jws.decode">module jws.decode</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.jws.decode.decode" id="apidoc.element.jws.decode.decode">
-        function <span class="apidocSignatureSpan">jws.</span>decode
-        <span class="apidocSignatureSpan">(jwsSig, opts)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function jwsDecode(jwsSig, opts) {
-  opts = opts || {};
-  jwsSig = toString(jwsSig);
-
-  if (!isValidJws(jwsSig))
-    return null;
-
-  var header = headerFromJWS(jwsSig);
-
-  if (!header)
-    return null;
-
-  var payload = payloadFromJWS(jwsSig);
-  if (header.typ === 'JWT' || opts.json)
-    payload = JSON.parse(payload, opts.encoding);
-
-  return {
-    header: header,
-    payload: payload,
-    signature: signatureFromJWS(jwsSig)
-  };
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-See above for a table of supported algorithms. `secretOrKey` is a string or
-buffer containing either the secret for HMAC algorithms, or the PEM
-encoded public key for RSA and ECDSA.
-
-Note that the `"alg"` value from the signature header is ignored.
-
-
-## jws.<span class="apidocCodeKeywordSpan">decode</span>(signature)
-
-(Synchronous) Returns the decoded header, decoded payload, and signature
-parts of the JWS Signature.
-
-Returns an object with three properties, e.g.
-```js
-{ header: { alg: 'HS256' },
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.jws.isValid" id="apidoc.module.jws.isValid">module jws.isValid</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.jws.isValid.isValid" id="apidoc.element.jws.isValid.isValid">
-        function <span class="apidocSignatureSpan">jws.</span>isValid
-        <span class="apidocSignatureSpan">(string)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function isValidJws(string) {
-  return JWS_REGEX.test(string) &amp;&amp; !!headerFromJWS(string);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.jws.sign" id="apidoc.module.jws.sign">module jws.sign</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.jws.sign.sign" id="apidoc.element.jws.sign.sign">
-        function <span class="apidocSignatureSpan">jws.</span>sign
-        <span class="apidocSignatureSpan">(opts)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function jwsSign(opts) {
-  var header = opts.header;
-  var payload = opts.payload;
-  var secretOrKey = opts.secret || opts.privateKey;
-  var encoding = opts.encoding;
-  var algo = jwa(header.alg);
-  var securedInput = jwsSecuredInput(header, payload, encoding);
-  var signature = algo.sign(securedInput, secretOrKey);
-  return util.format('%s.%s', securedInput, signature);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-RS512 | RSASSA using SHA-512 hash algorithm
-ES256 | ECDSA using P-256 curve and SHA-256 hash algorithm
-ES384 | ECDSA using P-384 curve and SHA-384 hash algorithm
-ES512 | ECDSA using P-521 curve and SHA-512 hash algorithm
-none | No digital signature or MAC value included
-
-
-## jws.<span class="apidocCodeKeywordSpan">sign</span>(options)
-
-(Synchronous) Return a JSON Web Signature for a header and a payload.
-
-Options:
-
-* `header`
-* `payload`
 ...</pre></li>
     </ul>
 
@@ -1202,75 +893,6 @@ Options:
 
 * `header`
 * `payload`
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.jws.tostring" id="apidoc.module.jws.tostring">module jws.tostring</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.jws.tostring.tostring" id="apidoc.element.jws.tostring.tostring">
-        function <span class="apidocSignatureSpan">jws.</span>tostring
-        <span class="apidocSignatureSpan">(obj)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString(obj) {
-  if (typeof obj === 'string')
-    return obj;
-  if (typeof obj === 'number' || Buffer.isBuffer(obj))
-    return obj.toString();
-  return JSON.stringify(obj);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.jws.verify" id="apidoc.module.jws.verify">module jws.verify</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.jws.verify.verify" id="apidoc.element.jws.verify.verify">
-        function <span class="apidocSignatureSpan">jws.</span>verify
-        <span class="apidocSignatureSpan">(jwsSig, algorithm, secretOrKey)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function jwsVerify(jwsSig, algorithm, secretOrKey) {
-  if (!algorithm) {
-    var err = new Error("Missing algorithm parameter for jws.verify");
-    err.code = "MISSING_ALGORITHM";
-    throw err;
-  }
-  jwsSig = toString(jwsSig);
-  var signature = signatureFromJWS(jwsSig);
-  var securedInput = securedInputFromJWS(jwsSig);
-  var algo = jwa(algorithm);
-  return algo.verify(securedInput, signature, secretOrKey);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-const signature = jws.sign({
-  header: { alg: 'HS256' },
-  payload: 'h. jon benjamin',
-  secret: 'has a van',
-});
-```
-
-## jws.<span class="apidocCodeKeywordSpan">verify</span>(signature, algorithm, secretOrKey)
-
-(Synchronous) Returns`true` or `false` for whether a signature matches a
-secret or key.
-
-`signature` is a JWS Signature. `header.alg` must be a value found in `jws.ALGORITHMS`.
-See above for a table of supported algorithms. `secretOrKey` is a string or
-buffer containing either the secret for HMAC algorithms, or the PEM
 ...</pre></li>
     </ul>
 
