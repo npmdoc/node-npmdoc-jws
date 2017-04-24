@@ -1,4 +1,7 @@
-# api documentation for  [jws (v3.1.4)](https://github.com/brianloveswords/node-jws#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-jws.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-jws) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-jws.svg)](https://travis-ci.org/npmdoc/node-npmdoc-jws)
+# npmdoc-jws
+
+#### api documentation for  [jws (v3.1.4)](https://github.com/brianloveswords/node-jws#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-jws.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-jws) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-jws.svg)](https://travis-ci.org/npmdoc/node-npmdoc-jws)
+
 #### Implementation of JSON Web Signatures
 
 [![NPM](https://nodei.co/npm/jws.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/jws)
@@ -71,7 +74,8 @@
     "scripts": {
         "test": "make test"
     },
-    "version": "3.1.4"
+    "version": "3.1.4",
+    "bin": {}
 }
 ```
 
